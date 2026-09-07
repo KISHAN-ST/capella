@@ -655,63 +655,17 @@ img, video {
   position: relative;
 }
 
-.offer-plate {
-  width: 380px;
-  height: 380px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 35% 35%, #ffffff 0%, #f4f1eb 70%, #ded7cc 100%);
-  box-shadow: var(--shadow-plate);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
-  text-align: center;
-  border: 8px solid #fdfcfa;
-  position: relative;
+.offer-food-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.12));
   transition: transform var(--transition-smooth);
 }
 
-.offer-plate:hover {
-  transform: scale(1.02);
-}
-
-.offer-plate-badge {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  background: var(--color-gold);
-  color: #ffffff;
-  font-family: var(--font-display);
-  font-size: 0.85rem;
-  letter-spacing: 0.1em;
-  padding: 6px 14px;
-  border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(197, 168, 128, 0.4);
-}
-
-.offer-plate-title {
-  font-family: var(--font-display);
-  font-size: 1.6rem;
-  letter-spacing: 0.14em;
-  color: var(--color-dark);
-  margin-top: 12px;
-}
-
-.offer-plate-sub {
-  font-family: var(--font-serif);
-  font-size: 1rem;
-  color: var(--color-gold);
-  font-style: italic;
-  margin-top: 4px;
-}
-
-.offer-plate-price {
-  font-family: var(--font-display);
-  font-size: 1.8rem;
-  color: var(--color-dark);
-  margin-top: 12px;
-  font-weight: 600;
+.offer-food-img:hover {
+  transform: scale(1.03);
 }
 
 /* Tabs */

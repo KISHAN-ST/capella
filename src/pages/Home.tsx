@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { SectionHeader } from '../components/SectionHeader';
 import { MenuItemRow } from '../components/MenuItemRow';
 import { STARTERS_MENU, GALLERY_ITEMS } from '../data/menuData';
-import { Check, ArrowRight, Sparkles, Coffee, Cake, UtensilsCrossed, Calendar } from 'lucide-react';
+import { Check, ArrowRight, Sparkles, Calendar } from 'lucide-react';
 
 export const Home: React.FC = () => {
   const [activeOfferTab, setActiveOfferTab] = useState<'meals' | 'desserts' | 'drinks'>('meals');
@@ -118,18 +118,13 @@ export const Home: React.FC = () => {
           />
 
           <div className="offer-container">
-            {/* Left circular dish hero presentation with drop shadow */}
+            {/* Left food dish image (matching Reference Image 2) */}
             <div className="offer-visual">
-              <div className="offer-plate">
-                <div style={{ color: 'var(--color-gold)', marginBottom: '8px' }}>
-                  {activeOfferTab === 'meals' && <UtensilsCrossed size={42} />}
-                  {activeOfferTab === 'desserts' && <Cake size={42} />}
-                  {activeOfferTab === 'drinks' && <Coffee size={42} />}
-                </div>
-                <h3 className="offer-plate-title">{currentOffer.title}</h3>
-                <span className="offer-plate-sub">{currentOffer.sub}</span>
-                <span className="offer-plate-price">{currentOffer.price}</span>
-              </div>
+              <img
+                src="/offerfood.png"
+                alt="Today's Best Offer Dish"
+                className="offer-food-img"
+              />
             </div>
 
             {/* Right Tabs & Checklist Card */}
